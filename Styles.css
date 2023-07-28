@@ -1,0 +1,26 @@
+body {
+    background-color: #9ed2ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .container img{
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  h1, h2 {
+    color: #2a2f51;
+    margin-top: 0;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  

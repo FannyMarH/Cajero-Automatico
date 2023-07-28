@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/564x/67/fd/d5/67fdd52ce7d3110664068786ddb423bb.jpg" alt="">
+        <h1>Selecciona una cuenta:</h1>
+        <select id="cuentas" onchange="seleccionarCuenta()">
+          <option value="-1">Seleccionar cuenta</option>
+          <option value="0">Persona 1</option>
+          <option value="1">Persona 2</option>
+          <option value="2">Persona 3</option>
+        </select>
+        <div id="interaccion" style="display: none;">
+          <input type="password" id="password" placeholder="Ingresa el password">
+          <button onclick="verificarPassword()">Ingresar</button>
+        </div>
+        <div id="operaciones" style="display: none;">
+          <h2 id="nombreCuenta"></h2>
+          <button onclick="consultarSaldo()">Consultar Saldo</button>
+          <button onclick="ingresarMonto()">Ingresar Monto</button>
+          <button onclick="retirarMonto()">Retirar Monto</button>
+        </div>
+        <div id="resultado" style="display: none;"></div>
+      </div>
+  <script src="app.js"></script>
+</body>
+</html>
